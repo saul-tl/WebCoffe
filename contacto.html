@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0064f89fb2.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="css/contacto.css">
+    <script>
+        function initMap() {
+    // Creamos un objeto LatLng con las coordenadas de Barcelona
+    var barcelona = {lat: 41.3850639, lng: 2.1734035};
+    // Creamos el objeto del mapa y lo asociamos al div #mapa
+    var mapa = new google.maps.Map(document.getElementById('mapa'), {
+      zoom: 13, // Zoom por defecto
+      center: barcelona // Centro del mapa
+    });
+    // Creamos un marcador en la ubicación de Barcelona
+    var marcador = new google.maps.Marker({
+      position: barcelona,
+      map: mapa,
+      title: 'Barcelona'
+    });
+  }
+    </script>
+    <title>Document</title>
+</head>
+<body  onload="initMap()">
+    <header>
+        <div class="container">
+            <p class="logo">Coffee Time</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Galeria</a>
+                <a href="presupuesto.html">Presupuesto</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="empresa">
+        <h1>Coffee Time S.L.</h1>
+        <p>Desde el primer momento, hemos trabajado duro para seleccionar los mejores granos de café de todo el mundo, cuidadosamente cultivados y tostados para obtener el máximo sabor y aroma. Nuestros expertos baristas están entrenados para preparar los cafés de manera experta, ofreciendo una amplia variedad de bebidas para todos los gustos, desde espresso hasta cappuccino y lattes.
+           <br><br> En nuestra tienda, ofrecemos un ambiente cálido y acogedor donde los clientes pueden disfrutar de su café recién hecho, con un trozo de nuestro delicioso pastel recién horneado o una opción saludable de nuestro menú. Nos enorgullecemos de proporcionar un excelente servicio al cliente y nos esforzamos por hacer que cada visita a nuestra cafetería sea una experiencia memorable y única. 
+           <br><br>También ofrecemos una variedad de productos de café en venta, desde granos de café recién tostados hasta cafeteras y accesorios de preparación de café. Nuestros productos están disponibles tanto en nuestra tienda como en línea, para que nuestros clientes puedan disfrutar de nuestro café de alta calidad en la comodidad de sus hogares.
+        </p>
+        <ul>
+          <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </section>
+      
+      <!-- Segunda sección -->
+      <section class="mapa">
+        <h2>Ubicación en Barcelona</h2>
+        <div id="mapa">
+          <!-- Aquí irá el mapa -->
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWt9Zn-pbpzVBEGegIfSKLYF_ia7h09aI"></script>
+        </div>
+      </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; MasterD 2023</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
